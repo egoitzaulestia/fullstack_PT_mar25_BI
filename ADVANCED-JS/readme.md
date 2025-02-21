@@ -39,113 +39,185 @@ callback();
 
 ## 2. Foreach
 
-(Abre index.html para ver el resultado de los tests)
+- Utiliza el siguiente array para resolver los próximos ejercicios:
+
+```
+let people = [
+ { name: 'Jamiro', age: 45 },
+ { name: 'Juan', age: 35 },
+ { name: 'Paco', age: 34 },
+ { name: 'Pepe', age: 14 },
+ { name: 'Pilar', age: 24 },
+ { name: 'Laura', age: 24 },
+ { name: 'Jenny', edad: 10 },
+]
+
+```
+
+- [ ] 1.- Crea un array con la gente mayor de 25 años y muéstralo por consola.
+- [ ] 2.- Crea un array con la gente que empieza por J.
 
 ## 3. Map
 
-- [ ] 1.- Dado el objeto **empleados**, extrae la empleada Ana completa.
+- [ ] 1.- Utilizando el array de antes crea un array con la gente mayor de 25 años y muéstralo por consola.
+
+- [ ] 2.- Crea un array con la gente que empieza por J.
+
+- [ ] 3.- Dado el siguiente array, crear otro que sea el resultado de elevar cada número a si mismo:
 
 ```
-
-const empleados = [
-{ name: "Luis", email: "Luis@gmail.com" },
-{ name: "Ana", email: "Ana@gmail.com" },
-{ name: "Andrea", email: "Andrea@gmail.com" },
-];
-
-```
-
-- [ ] 2.- Dado el objeto **empleados**, extrae el email del empleado Luis --> Luis@gmail.com
-
-- [ ] 3.- Usa destructuración para cambiar los valores de a y b;
-
-```
-
-// Inicialmente
-let a = 5;
-let b = 3;
-
-// Al final
-let a = 3;
-let b = 5;
-
-```
-
-- [ ] 4.- Dado el objeto **HIGH_TEMPERATURES**
-
-```
-
-const HIGH_TEMPERATURES = {
-yesterday: 30,
-today: 35,
-tomorrow: 32,
-};
-
-```
-
-Cambiar las siguientes líneas para guardar mediante destructuración los valores de temperaturas en las variables maximaHoy y maximaManana
-
-```
-
-const maximaHoy = HIGH_TEMPERATURES.today;
-const maximaManana = HIGH_TEMPERATURES.tomorrow;
-console.log(maximaHoy);
-console.log(maximaManana);
+const numbers = [ 4, 5, 6, 7, 8, 9, 10]
+// Resultado esperado
+// [256, 3125, 46656, 823543, 16777216, 387420489, 10000000000]
 
 ```
 
 ## 4. Filter
 
-- [ ] 5.- Escribe una función llamada **sumEveryOther** que pueda recibir cualquier cantidad de números y devuelva la suma de todos los demás argumentos.
+- [ ] 1.- Crea un segundo array que devuelva los impares
+
+```
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 ```
 
-sumEveryOther(6, 8, 2, 3, 1); //20
-sumEveryOther(11, 3, 12); //26
+- [ ] 2.- Dado el siguiente array, genera un segundo array que filtre los platos veganos y saque una sentencia como la del ejemplo:
 
 ```
-
-- [ ] 6.- Escribe una función llamada **addOnlyNums** que pueda recibir cualquier número de argumentos (incluyendo números y strings y retorne la suma solo de los números).
-
+ const foodList = [
+	{ name: 'Tempeh', isVeggie: true },
+	{ name: 'Cheesbacon burguer', isVeggie: false },
+	{ name: 'Tofu burguer', isVeggie: true },
+	{ name: 'Entrecot', isVeggie: false }
+]
+	/* [
+			'Que rico Tempeh me voy a comer!',
+			'Que rica Tofu burguer me voy a comer!'
+			]
+	*/
 ```
-
-addOnlyNums(1, "perro", 2, 4); //7
-
-```
-
-- [ ] 7.- Escribe una función llamada **countTheArgs** que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
-
-```
-
-countTheArgs("gato", "perro"); //2
-countTheArgs("gato", "perro", "pollo", "oso"); //4
-
-```
-
-- [ ] 8.- Escribe una función llamada **combineTwoArrays** que reciba dos array cómo argumentos y devuelva solo un array que combine los dos (usando spread operator).
-
-- [ ] 9.- Escriba una función llamada onlyUniques que acepte cualquier número de argumentos y devuelva un array de elementos únicos, sin repetidos.
-
-```
-
-onlyUniques("gato", "pollo", "cerdo", "cerdo"); //["gato", "pollo", "cerdo"]
-onlyUniques(1, 1, 2, 2, 3, 6, 7, 8); //[1, 2, 3, 6, 7, 8]
-
-```
-
-- [ ] 10.- Escriba una función llamada **combineAllArrays** que pueda recibir cualquier cantidad de arrays como argumentos y los combine todos en un solo array.
-
-```
-
-combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1]); // [3, 6, 7, 8, 2, 7, 3, 1]
-combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]); // [2, 7, 3, 1, 2, 7, 4, 12, 2, 44, 22, 7, 3, 1]
-
-```
-
-- [ ] 11.- Escriba una función llamada **sumAndSquare** que reciba cualquier número de argumentos, los eleve al cuadrado y devuelva la suma de todos los valores cuadrados.
 
 ## 5. Reduce
 
-```
+- [ ] 1.- Dado el siguiente array, obtén la multiplicación de todos los elementos del array:
 
 ```
+const numbers = [39, 2, 4, 25, 62]
+// Salida--> 483600
+
+```
+
+### Extras
+
+## Map
+
+- [ ] 1.- Dado el siguiente array, crear un segundo array que forme frases como en el ejemplo accediendo a las propiedades del objeto proporcionado:
+
+```
+const staff = [
+  {
+    name: "Pepe",
+    role: "The Boss",
+    hobbies: ["leer", "ver pelis"],
+  },
+  {
+    name: "Ana",
+    role: "becaria",
+    hobbies: ["nadar", "bailar"],
+  },
+  {
+    name: "Luis",
+    role: "programador",
+    hobbies: ["dormir", "comprar"],
+  },
+  {
+    name: "Carlos",
+    role: "secretario",
+    hobbies: ["futbol", "queso"],
+  }
+]
+
+// Resultado esperado
+/*
+    [
+      'Pepe es TheBoss y le gusta leer y ver pelis',
+      'Ana es becaria y le gusta nadar y bailar',
+      'Luis es programador y le gusta dormir y comprar',
+      'Ana es becaria y le gusta nadar y bailar',
+      'Carlos es secretario y le gusta fútbol y queso'
+    ]
+ */
+
+```
+
+- [ ] 2.- Dado el siguiente array, generar un segundo array que consiga generar de salida el resultado esperado:
+
+```
+const foodList = ["Pizza", "Ramen", "Paella", "Entrecot"];
+//Resultado esperado
+/* [
+    'Como soy de Italia, amo comer Pizza',
+    'Como soy de Japón, amo comer Ramen',
+    'Como soy de Valencia, amo comer Paella',
+    'Aunque no como carne, el Entrecot es sabroso'
+   ]
+*/
+
+```
+
+## Filter
+
+- [ ] 1.- Dado el siguiente array, devolver un array con los nombres de los elementos que valgan más de 300 euros
+
+```
+
+const inventory = [
+  {
+    name: 'Mobile phone',
+    price: 199
+  },
+  {
+    name: 'TV Samsung',
+    price: 459
+  },
+  {
+    name: 'Viaje a cancún',
+    price: 600
+  },
+  {
+    name: 'Mascarilla',
+    price: 1
+  }
+];
+/*
+  [
+    'TV Samsung,',
+    'Viaje a Cancún'
+  ]
+*/
+
+```
+
+## Reduce
+
+- [ ] 1.- Concatena todos los elementos del array con reduce para que devuelva una sola frase
+
+```
+
+const sentenceElements = [
+  'Me',
+  'llamo',
+  /* Tu nombre aquí! */,
+  'y',
+  'quiero',
+  'sentir',
+  'la',
+  'fuerza',
+  'con',
+  'javascript'
+];
+
+// Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
+
+```
+
