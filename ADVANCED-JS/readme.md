@@ -2,11 +2,38 @@
 
 ## 1. Funciones flecha
 
-[ ] 1.- Convierte la siguiente función en una función flecha:
+- [ ] 1.- Convierte la siguiente función en una función flecha:
 
 ```
 function greetings() {
   return "Hola";
+}
+```
+
+- [ ] 2.- Convierte la siguiente función en una función flecha en línea:
+
+```
+function division(a, b) {
+  return a / b;
+}
+```
+
+- [ ] 3.- Convierte la siguiente función en una función flecha:
+
+```
+function myName(name) {
+  return `Mi nombre es ${name}`;
+}
+```
+
+- [ ] 4.- Convierte las siguientes funciones en funciones flecha:
+
+```
+function test2() {
+console.log("Función test 2 ejecutada.");
+}
+function test1(callback) {
+callback();
 }
 ```
 
@@ -19,11 +46,13 @@ function greetings() {
 - [ ] 1.- Dado el objeto **empleados**, extrae la empleada Ana completa.
 
 ```
+
 const empleados = [
-    { name: "Luis", email: "Luis@gmail.com" },
-    { name: "Ana", email: "Ana@gmail.com" },
-    { name: "Andrea", email: "Andrea@gmail.com" },
+{ name: "Luis", email: "Luis@gmail.com" },
+{ name: "Ana", email: "Ana@gmail.com" },
+{ name: "Andrea", email: "Andrea@gmail.com" },
 ];
+
 ```
 
 - [ ] 2.- Dado el objeto **empleados**, extrae el email del empleado Luis --> Luis@gmail.com
@@ -31,6 +60,7 @@ const empleados = [
 - [ ] 3.- Usa destructuración para cambiar los valores de a y b;
 
 ```
+
 // Inicialmente
 let a = 5;
 let b = 3;
@@ -38,15 +68,17 @@ let b = 3;
 // Al final
 let a = 3;
 let b = 5;
+
 ```
 
 - [ ] 4.- Dado el objeto **HIGH_TEMPERATURES**
 
 ```
+
 const HIGH_TEMPERATURES = {
-  yesterday: 30,
-  today: 35,
-  tomorrow: 32,
+yesterday: 30,
+today: 35,
+tomorrow: 32,
 };
 
 ```
@@ -54,6 +86,7 @@ const HIGH_TEMPERATURES = {
 Cambiar las siguientes líneas para guardar mediante destructuración los valores de temperaturas en las variables maximaHoy y maximaManana
 
 ```
+
 const maximaHoy = HIGH_TEMPERATURES.today;
 const maximaManana = HIGH_TEMPERATURES.tomorrow;
 console.log(maximaHoy);
@@ -66,19 +99,24 @@ console.log(maximaManana);
 - [ ] 5.- Escribe una función llamada **sumEveryOther** que pueda recibir cualquier cantidad de números y devuelva la suma de todos los demás argumentos.
 
 ```
+
 sumEveryOther(6, 8, 2, 3, 1); //20
 sumEveryOther(11, 3, 12); //26
+
 ```
 
 - [ ] 6.- Escribe una función llamada **addOnlyNums** que pueda recibir cualquier número de argumentos (incluyendo números y strings y retorne la suma solo de los números).
 
 ```
+
 addOnlyNums(1, "perro", 2, 4); //7
+
 ```
 
 - [ ] 7.- Escribe una función llamada **countTheArgs** que pueda recibir cualquier número de argumentos y devuelva un número que indique cuántos argumentos ha recibido.
 
 ```
+
 countTheArgs("gato", "perro"); //2
 countTheArgs("gato", "perro", "pollo", "oso"); //4
 
@@ -89,17 +127,25 @@ countTheArgs("gato", "perro", "pollo", "oso"); //4
 - [ ] 9.- Escriba una función llamada onlyUniques que acepte cualquier número de argumentos y devuelva un array de elementos únicos, sin repetidos.
 
 ```
+
 onlyUniques("gato", "pollo", "cerdo", "cerdo"); //["gato", "pollo", "cerdo"]
 onlyUniques(1, 1, 2, 2, 3, 6, 7, 8); //[1, 2, 3, 6, 7, 8]
+
 ```
 
 - [ ] 10.- Escriba una función llamada **combineAllArrays** que pueda recibir cualquier cantidad de arrays como argumentos y los combine todos en un solo array.
 
 ```
+
 combineAllArrays([3, 6, 7, 8], [2, 7, 3, 1]); // [3, 6, 7, 8, 2, 7, 3, 1]
 combineAllArrays([2, 7, 3, 1], [2, 7, 4, 12], [2, 44, 22, 7, 3, 1]); // [2, 7, 3, 1, 2, 7, 4, 12, 2, 44, 22, 7, 3, 1]
+
 ```
 
 - [ ] 11.- Escriba una función llamada **sumAndSquare** que reciba cualquier número de argumentos, los eleve al cuadrado y devuelva la suma de todos los valores cuadrados.
 
 ## 5. Reduce
+
+```
+
+```
