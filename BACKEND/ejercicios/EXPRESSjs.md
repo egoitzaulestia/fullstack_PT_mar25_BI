@@ -64,3 +64,8 @@ json
   - En la pantalla de productos, que cada producto tenga la opción de ser eliminado.
 
 
+## Github
+
+- [ ] Subir el proyecto a un repositorio en github
+- [ ] Hacer commits con frecuencia
+- [ ] Hacer un pequeño readme
