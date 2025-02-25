@@ -29,9 +29,10 @@
 
 ## Ejercicio 3
 
-1. Crear un archivo con el nombre `ej3.js`.
-2. Levantar un servidor de Express.
-3. Al llamar a `localhost:3000/products` se debe mostrar el siguiente JSON:
+- [ ] Crear un archivo con el nombre `ej3.js`.
+- [ ] Levantar un servidor de Express.
+- [ ] Al llamar a `localhost:3000/products` se debe mostrar el siguiente JSON:
+
 ````
 json
   {
@@ -62,7 +63,6 @@ json
   - Pantalla Productos que muestre los productos.
   - Pantalla para añadir productos.
   - En la pantalla de productos, que cada producto tenga la opción de ser eliminado.
-
 
 ## Github
 
