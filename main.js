@@ -190,37 +190,36 @@ console.log(multipliedArray)
 
 
 
-
-
 // ### Extras
 
 // ## Map
 
-// - [ ] 1.- Dado el siguiente array, crear un segundo array que forme frases como en el ejemplo accediendo a las propiedades del objeto proporcionado:
+// - [ ] 1.- Dado el siguiente array, crear un segundo array que forme frases como en el ejemplo 
+//           accediendo a las propiedades del objeto proporcionado:
 
 // ```
-// const staff = [
-//   {
-//     name: "Pepe",
-//     role: "The Boss",
-//     hobbies: ["leer", "ver pelis"],
-//   },
-//   {
-//     name: "Ana",
-//     role: "becaria",
-//     hobbies: ["nadar", "bailar"],
-//   },
-//   {
-//     name: "Luis",
-//     role: "programador",
-//     hobbies: ["dormir", "comprar"],
-//   },
-//   {
-//     name: "Carlos",
-//     role: "secretario",
-//     hobbies: ["futbol", "queso"],
-//   }
-// ]
+const staff = [
+  {
+    name: "Pepe",
+    role: "The Boss",
+    hobbies: ["leer", "ver pelis"],
+  },
+  {
+    name: "Ana",
+    role: "becaria",
+    hobbies: ["nadar", "bailar"],
+  },
+  {
+    name: "Luis",
+    role: "programador",
+    hobbies: ["dormir", "comprar"],
+  },
+  {
+    name: "Carlos",
+    role: "secretario",
+    hobbies: ["futbol", "queso"],
+  }
+]
 
 // // Resultado esperado
 // /*
@@ -233,4 +232,85 @@ console.log(multipliedArray)
 //     ]
 //  */
 
+const staffStatements = staff
+    .map((staffMember) => `${staffMember.name} es ${staffMember.role} y le gusta ${staffMember.hobbies[0]} y ${staffMember.hobbies[1]}`)
+
+console.log(staffStatements)
+
+
+
+
+// - [ ] 2.- Dado el siguiente array, generar un segundo array que consiga generar de salida el resultado esperado:
+
 // ```
+const foodList2 = ["Pizza", "Ramen", "Paella", "Entrecot"];
+// //Resultado esperado
+// /* [
+//     'Como soy de Italia, amo comer Pizza',
+//     'Como soy de Japón, amo comer Ramen',
+//     'Como soy de Valencia, amo comer Paella',
+//     'Aunque no como carne, el Entrecot es sabroso'
+//    ]
+// */
+
+const foodListStatements = foodList2
+    .map((statement) => {})
+
+
+
+// ## Filter
+
+// - [ ] 1.- Dado el siguiente array, devolver un array con los nombres de los elementos que valgan más de 300 euros
+
+// ```
+
+// const inventory = [
+//   {
+//     name: 'Mobile phone',
+//     price: 199
+//   },
+//   {
+//     name: 'TV Samsung',
+//     price: 459
+//   },
+//   {
+//     name: 'Viaje a cancún',
+//     price: 600
+//   },
+//   {
+//     name: 'Mascarilla',
+//     price: 1
+//   }
+// ];
+// /*
+//   [
+//     'TV Samsung,',
+//     'Viaje a Cancún'
+//   ]
+// */
+
+// ```
+
+// ## Reduce
+
+// - [ ] 1.- Concatena todos los elementos del array con reduce para que devuelva una sola frase
+
+// ```
+
+// const sentenceElements = [
+//   'Me',
+//   'llamo',
+//   /* Tu nombre aquí! */,
+//   'y',
+//   'quiero',
+//   'sentir',
+//   'la',
+//   'fuerza',
+//   'con',
+//   'javascript'
+// ];
+
+// // Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
+
+// ```
+

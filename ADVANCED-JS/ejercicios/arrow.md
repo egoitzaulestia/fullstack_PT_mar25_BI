@@ -10,12 +10,6 @@ function greetings() {
 }
 ```
 
-const greetings = () => {
-  return "Hola"
-}
-
-console.log( greetings() )
-console.log( greetings )
 
 - [ ] 2.- Convierte la siguiente función en una función flecha en línea:
 
