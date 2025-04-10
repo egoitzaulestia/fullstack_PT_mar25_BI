@@ -253,8 +253,36 @@ const foodList2 = ["Pizza", "Ramen", "Paella", "Entrecot"];
 //    ]
 // */
 
+// - defaults/osx-64::aext-assistant-server==0.4.0=py39hecd8cb5_0
+let messagePizza;
+let messageRamen;
+let messagePaella;
+let messageEntrecot;
+
 const foodListStatements = foodList2
-    .map((statement) => {})
+    .map((dish) => {
+        
+
+        if (dish === 'Pizza') {
+            messagePizza = `Como soy de Italia, amo comer ${dish}`
+            console.log(messagePizza)
+        } 
+        if (dish === 'Ramen') {
+            messageRamen = `Como soy de Japón, amo comer ${dish}`
+            console.log(messageRamen)
+        }
+        if (dish === 'Paella') {
+            messagePaella = `Como soy de Japón, amo comer ${dish}`
+            console.log(messagePaella)
+        }
+        if (dish === 'Entrecot') {
+            messageEntrecot = `Aunque no como carne, el ${dish} es sabroso`
+        }
+
+        return [messagePizza, messageRamen, messagePaella, messageEntrecot]
+    }).filter((dishMessage) => (dishMessage === messagePizza))
+
+console.log(foodListStatements)
 
 
 
