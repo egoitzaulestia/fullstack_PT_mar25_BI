@@ -9,14 +9,10 @@
 // ```
 
 const greetings = () => {
-  return "Hola"
+  return "Hola";
 }
 
-const hello = greetings()
-
-
-// console.log( greetings() )
-console.log(hello)
+console.log(greetings());
 
 
 
@@ -43,7 +39,7 @@ console.log(division(9, 3));
 // ```
 
 const myName = (nameUser) => {
-    return `Mi nombre es ${nameUser}`
+    return `Mi nombre es ${nameUser}`;
 }
 
 console.log(myName('Ego'));
@@ -79,7 +75,7 @@ let people = [
  { name: 'Pilar', age: 24 },
  { name: 'Laura', age: 24 },
  { name: 'Jenny', edad: 10 },
-]
+];
 
 
 // - [ ] 1.- Crea un array con la gente mayor de 25 años y muéstralo por consola.
@@ -88,11 +84,11 @@ const aboveTwentifive = [];
 
 people.forEach((person) => {
     if (person.age > 25) {
-        aboveTwentifive.push(person)
+        aboveTwentifive.push(person);
     }
 })
 
-console.log(aboveTwentifive)
+console.log(aboveTwentifive);
 
 
 // - [ ] 2.- Crea un array con la gente que empieza por J.
@@ -105,7 +101,7 @@ people.forEach((person) => {
     }
 })
 
-console.log(nameStartWithJ)
+console.log(nameStartWithJ);
 
 
 
@@ -121,7 +117,7 @@ const aboveTwentifive2 = people.map((person) => {
     }
 }).filter(person => person !== null);
 
-console.log(aboveTwentifive2)
+console.log(aboveTwentifive2);
 
 
 // - [ ] 2.- Crea un array con la gente que empieza por J.
@@ -134,16 +130,16 @@ const nameStartWithJ2 = people.map((person) => {
     }
 }).filter((person) => person !== null);
 
-console.log(nameStartWithJ2)
+console.log(nameStartWithJ2);
 
 
 // - [ ] 3.- Dado el siguiente array, crear otro que sea el resultado de elevar cada número a si mismo:
 
-const numbers = [ 4, 5, 6, 7, 8, 9, 10]
+const numbers = [ 4, 5, 6, 7, 8, 9, 10];
 
-const numbersPowered = numbers.map((number) => number ** number)
+const numbersPowered = numbers.map((number) => number ** number);
 
-console.log(numbersPowered)
+console.log(numbersPowered);
 
 
 
@@ -154,9 +150,9 @@ console.log(numbersPowered)
 const numbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const oddNumbers = numbers2
-    .filter((number) => number % 2 === 1)
+    .filter((number) => number % 2 === 1);
 
-console.log(oddNumbers)
+console.log(oddNumbers);
 
 // - [ ] 2.- Dado el siguiente array, genera un segundo array que filtre los platos veganos y saque una sentencia como la del ejemplo:
 
@@ -165,7 +161,7 @@ console.log(oddNumbers)
 	{ name: 'Cheesbacon burguer', isVeggie: false },
 	{ name: 'Tofu burguer', isVeggie: true },
 	{ name: 'Entrecot', isVeggie: false }
-]
+];
 /* 
 ['Que rico Tempeh me voy a comer!', 'Que rica Tofu burguer me voy a comer!']
 */
@@ -174,7 +170,7 @@ const veganFoodList = foodList
     .filter((dish) => dish.isVeggie)
     .map((dish) => `Que rico ${dish.name} me voy a comer`);
 
-console.log(veganFoodList)
+console.log(veganFoodList);
 
 
 
@@ -186,8 +182,7 @@ const numbers3 = [39, 2, 4, 25, 62];
 
 const multipliedArray = numbers3.reduce((a, b) => a * b);
 
-console.log(multipliedArray)
-
+console.log(multipliedArray);
 
 
 // ### Extras
@@ -197,7 +192,6 @@ console.log(multipliedArray)
 // - [ ] 1.- Dado el siguiente array, crear un segundo array que forme frases como en el ejemplo 
 //           accediendo a las propiedades del objeto proporcionado:
 
-// ```
 const staff = [
   {
     name: "Pepe",
@@ -222,67 +216,50 @@ const staff = [
 ]
 
 // // Resultado esperado
-// /*
-//     [
-//       'Pepe es TheBoss y le gusta leer y ver pelis',
-//       'Ana es becaria y le gusta nadar y bailar',
-//       'Luis es programador y le gusta dormir y comprar',
-//       'Ana es becaria y le gusta nadar y bailar',
-//       'Carlos es secretario y le gusta fútbol y queso'
-//     ]
-//  */
+// [
+//     'Pepe es TheBoss y le gusta leer y ver pelis',
+//     'Ana es becaria y le gusta nadar y bailar',
+//     'Luis es programador y le gusta dormir y comprar',
+//     'Ana es becaria y le gusta nadar y bailar',
+//     'Carlos es secretario y le gusta fútbol y queso'
+// ]
 
 const staffStatements = staff
     .map((staffMember) => `${staffMember.name} es ${staffMember.role} y le gusta ${staffMember.hobbies[0]} y ${staffMember.hobbies[1]}`)
 
-console.log(staffStatements)
+console.log(staffStatements);
 
 
 
 
 // - [ ] 2.- Dado el siguiente array, generar un segundo array que consiga generar de salida el resultado esperado:
 
-// ```
 const foodList2 = ["Pizza", "Ramen", "Paella", "Entrecot"];
+
 // //Resultado esperado
-// /* [
+// [
 //     'Como soy de Italia, amo comer Pizza',
 //     'Como soy de Japón, amo comer Ramen',
 //     'Como soy de Valencia, amo comer Paella',
 //     'Aunque no como carne, el Entrecot es sabroso'
-//    ]
-// */
+// ]
 
-// - defaults/osx-64::aext-assistant-server==0.4.0=py39hecd8cb5_0
-let messagePizza;
-let messageRamen;
-let messagePaella;
-let messageEntrecot;
 
 const foodListStatements = foodList2
     .map((dish) => {
-        
 
         if (dish === 'Pizza') {
-            messagePizza = `Como soy de Italia, amo comer ${dish}`
-            console.log(messagePizza)
-        } 
-        if (dish === 'Ramen') {
-            messageRamen = `Como soy de Japón, amo comer ${dish}`
-            console.log(messageRamen)
+            return `Como soy de Italia, amo comer ${dish}`;
+        } else if (dish === 'Ramen') {
+            return `Como soy de Japón, amo comer ${dish}`;
+        } else if (dish === 'Paella') {
+            return `Como soy de Japón, amo comer ${dish}`;
+        } else if (dish === 'Entrecot') {
+            return `Aunque no como carne, el ${dish} es sabroso`;
         }
-        if (dish === 'Paella') {
-            messagePaella = `Como soy de Japón, amo comer ${dish}`
-            console.log(messagePaella)
-        }
-        if (dish === 'Entrecot') {
-            messageEntrecot = `Aunque no como carne, el ${dish} es sabroso`
-        }
+})
 
-        return [messagePizza, messageRamen, messagePaella, messageEntrecot]
-    }).filter((dishMessage) => (dishMessage === messagePizza))
-
-console.log(foodListStatements)
+console.log(foodListStatements);
 
 
 
@@ -290,34 +267,40 @@ console.log(foodListStatements)
 
 // - [ ] 1.- Dado el siguiente array, devolver un array con los nombres de los elementos que valgan más de 300 euros
 
-// ```
-
-// const inventory = [
-//   {
-//     name: 'Mobile phone',
-//     price: 199
-//   },
-//   {
-//     name: 'TV Samsung',
-//     price: 459
-//   },
-//   {
-//     name: 'Viaje a cancún',
-//     price: 600
-//   },
-//   {
-//     name: 'Mascarilla',
-//     price: 1
-//   }
-// ];
-// /*
-//   [
-//     'TV Samsung,',
-//     'Viaje a Cancún'
-//   ]
+const inventory = [
+  {
+    name: 'Mobile phone',
+    price: 199
+  },
+  {
+    name: 'TV Samsung',
+    price: 459
+  },
+  {
+    name: 'Viaje a cancún',
+    price: 600
+  },
+  {
+    name: 'Mascarilla',
+    price: 1
+  }
+];
+/*
+  [
+    'TV Samsung,',
+    'Viaje a Cancún'
+  ]
 // */
 
-// ```
+const inventoryFilte = inventory.filter((item) => {
+    if (item.price > 300) {
+        return item.name;
+    }
+})
+
+console.log(inventoryFilte);
+
+
 
 // ## Reduce
 
@@ -325,20 +308,22 @@ console.log(foodListStatements)
 
 // ```
 
-// const sentenceElements = [
-//   'Me',
-//   'llamo',
-//   /* Tu nombre aquí! */,
-//   'y',
-//   'quiero',
-//   'sentir',
-//   'la',
-//   'fuerza',
-//   'con',
-//   'javascript'
-// ];
+const sentenceElements = [
+  'Me',
+  'llamo',
+  'Egoitz',
+  'y',
+  'quiero',
+  'sentir',
+  'la',
+  'fuerza',
+  'con',
+  'javascript'
+];
 
 // // Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
 
 // ```
+const sentence = sentenceElements.reduce((a, b) => a + ` ${b}`);
 
+console.log(sentence);
